@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<ruleset name="Standard Java Starter"
+    xmlns="http://pmd.sourceforge.net/ruleset/2.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 https://pmd.sourceforge.net/ruleset_2_0_0.xsd">
+
+    <description>Static analysis rules for the Royal Game of Ur Java project.</description>
+
+    <rule ref="category/java/errorprone.xml">
+        <!-- Domain constants are intentionally inlined as meaningful literals -->
+        <exclude name="AvoidLiteralsInIfCondition"/>
+        <!-- PrintWriter/BufferedReader are borrowed from Terminal (caller owns lifecycle) -->
+        <exclude name="CloseResource"/>
+        <!-- Field-name-matches-accessor is intentional Elegant Objects style -->
+        <exclude name="AvoidFieldNameMatchingMethodName"/>
+    </rule>
+
+    <rule ref="category/java/bestpractices.xml">
+        <!-- Multi-assert tests are intentional: each test covers one behaviour, not one line -->
+        <exclude name="UnitTestContainsTooManyAsserts"/>
+        <!-- Assertion messages are omitted intentionally; the assertion value provides context -->
+        <exclude name="UnitTestAssertionsShouldIncludeMessage"/>
+        <!-- No logging framework in use -->
+        <exclude name="GuardLogStatement"/>
+    </rule>
+
+</ruleset>
