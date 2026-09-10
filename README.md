@@ -8,8 +8,8 @@ A Java 25 project template for hexagonal (ports & adapters) architecture with a 
 |---|---|
 | Language | Java 25 (Eclipse Temurin toolchain) |
 | Build | Gradle 9.7.1 with version catalog (`gradle/libs.versions.toml`) |
-| CLI I/O | JLine 3 |
-| Unit tests | JUnit Jupiter 5 |
+| CLI I/O | JLine 4 |
+| Unit tests | JUnit Jupiter 6 |
 | Property-based tests | jqwik |
 | Coverage | JaCoCo (HTML/XML/CSV) |
 | Mutation testing | PIT (pitest) |
