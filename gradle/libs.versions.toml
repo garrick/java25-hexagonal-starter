@@ -2,13 +2,17 @@
 # https://docs.gradle.org/current/userguide/version_catalogs.html#sec::toml-dependencies-format
 
 [versions]
-jline = "3.27.1"
-junit-jupiter = "5.14.4"
-junit-platform-launcher = "1.14.4"
-jqwik = "1.9.3"
+jline = "4.4.3"
+junit-jupiter = "6.1.3"
+junit-platform-launcher = "6.1.3"
+jqwik = "1.10.1"
 pitest-gradle-plugin = "1.19.0"
 pitest-junit5-plugin = "1.2.3"
 pitest-core = "1.25.4"
+code-quality-tools-plugin = "0.25.0"
+checkstyle-tool = "10.26.1"
+pmd-tool = "7.25.0"
+versions-plugin = "0.61.0"
 
 [libraries]
 jline = { module = "org.jline:jline", version.ref = "jline" }
@@ -18,3 +22,5 @@ jqwik = { module = "net.jqwik:jqwik", version.ref = "jqwik" }
 
 [plugins]
 pitest = { id = "info.solidsoft.pitest", version.ref = "pitest-gradle-plugin" }
+code-quality-tools = { id = "com.vanniktech.code.quality.tools", version.ref = "code-quality-tools-plugin" }
+versions = { id = "io.github.ben-manes.versions", version.ref = "versions-plugin" }

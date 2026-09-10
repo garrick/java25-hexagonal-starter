@@ -1,13 +1,13 @@
-# java21-hexagonal-starter
+# java25-hexagonal-starter
 
-A Java 21 project template for hexagonal (ports & adapters) architecture with a batteries-included quality gate wired into every build.
+A Java 25 project template for hexagonal (ports & adapters) architecture with a batteries-included quality gate wired into every build.
 
 ## Stack
 
 | Concern | Tool |
 |---|---|
-| Language | Java 21 (Eclipse Temurin toolchain) |
-| Build | Gradle 9.5.1 with version catalog (`gradle/libs.versions.toml`) |
+| Language | Java 25 (Eclipse Temurin toolchain) |
+| Build | Gradle 9.7.1 with version catalog (`gradle/libs.versions.toml`) |
 | CLI I/O | JLine 3 |
 | Unit tests | JUnit Jupiter 5 |
 | Property-based tests | jqwik |
@@ -59,7 +59,7 @@ Runs on `ubuntu-latest` with `contents: read` permissions (no write access to th
 | Step | Action / Command | Purpose |
 |---|---|---|
 | Checkout | `actions/checkout@v4` | Full source checkout |
-| JDK setup | `actions/setup-java@v4` — Temurin 21 | Matches the local toolchain declaration |
+| JDK setup | `actions/setup-java@v4` — Temurin 25 | Matches the local toolchain declaration |
 | Gradle setup | `gradle/actions/setup-gradle@v4.0.0` | Enables Gradle build caching and wrapper validation |
 | Quality gate | `./gradlew check` | Runs the full gate: tests, JaCoCo, PIT, Checkstyle, PMD, CPD |
 
