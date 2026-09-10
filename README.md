@@ -33,7 +33,7 @@ A Java 25 project template for hexagonal (ports & adapters) architecture with a 
 
 `./gradlew check` runs everything in one shot:
 
-- **JUnit 5** — unit and integration tests
+- **JUnit 6** — unit and integration tests
 - **jqwik** — property-based tests (registered automatically via JUnit Platform)
 - **JaCoCo** — line/branch coverage report at `app/build/reports/jacoco/`
 - **PIT** — mutation testing report at `app/build/reports/pitest/`
@@ -67,7 +67,7 @@ Runs on `ubuntu-latest` with `contents: read` permissions (no write access to th
 
 The `check` task is the single CI entrypoint — the same command you run locally. A red build means at least one of:
 
-- JUnit 5 / jqwik test failure
+- JUnit 6 / jqwik test failure
 - JaCoCo coverage threshold missed
 - PIT mutation score threshold missed
 - Checkstyle rule violation
